@@ -20,5 +20,20 @@ namespace TestNinja.UnitTests
             //Assert
             Assert.IsTrue(result);
         }
+
+        [TestMethod]
+        public void CanBeCancelledBy_UserIsSameWhoReserved_ReturnsTrue()
+        {
+            //Arrange
+            var reservation = new Reservation();
+            var userReserve = new User();
+            reservation.MadeBy = userReserve;
+
+            //Act
+            var result = reservation.CanBeCancelledBy(userReserve);
+
+            //Assert
+            Assert.IsTrue(result);
+        }
     }
 }
