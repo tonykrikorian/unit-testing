@@ -59,8 +59,9 @@ namespace TestNinja.UnitTests
             Assert.That(result, Is.EquivalentTo(new[] { 1, 3, 5 }));
 
             //Asserts Utiles
-            Assert.That(result, Is.Ordered);
-            Assert.That(result, Is.Unique);
+            //Assert.That(result, Is.Ordered);
+            //Assert.That(result, Is.Unique);
+
         }
     }
 }
