@@ -29,7 +29,6 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
-        [Ignore("Este test da problemas, arreglarlo luego")]
         public void Add_WhenCalled_ReturnTheSumOfArguments()
         {
             //Actual
